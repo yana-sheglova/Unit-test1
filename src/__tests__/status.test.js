@@ -8,7 +8,7 @@ test('health > 50 should return "healthy"', () => {
   expect(getHealthStatus(character)).toBe('healthy');
 });
 
-test('health <= 50 and health > 15 should return "wounded"', () => {
+test('health > 15 should return "wounded"', () => {
   const character = {
     name: 'Маг',
     health: 36,
